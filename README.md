@@ -1,135 +1,124 @@
-# Predicting Student Dropout and Academic Success Using Machine Learning and Deep Learning
+# Predicting Student Dropout and Academic Success with Machine Learning and Deep Learning
 
-## Project Overview
+## Project Description
 
-Student success remains one of the most important challenges facing educational institutions worldwide. Universities and colleges invest significant resources into supporting students, yet many learners still struggle academically, become disengaged, or eventually drop out. Early identification of at-risk students can help institutions provide timely interventions, improve retention rates, and support better academic outcomes.
+Ensuring student success is the main problem that is currently facing educational institutions all over the world. Despite the fact that universities and colleges make a great effort to support their students, there are still students who experience difficulties in studying and even fail to pass exams or drop out of studies. Early detection of potentially problematic students may enable educational institutions to provide assistance to those students in time and increase their chances for successful graduation.
 
-This project investigates whether student academic outcomes can be predicted using machine learning and deep learning techniques. The study compares multiple traditional machine learning algorithms with neural network architectures to determine which approaches perform best when predicting whether a student will graduate, remain enrolled, or drop out.
+The current research explores whether it is possible to predict student academic outcomes with the use of machine learning and deep learning techniques. The project includes comparing several classical machine learning algorithms with neural networks in terms of their ability to predict the fact of a student graduating, being enrolled in university or dropping out.
 
-The project was completed as part of the Introduction to Machine Learning module and demonstrates the complete machine learning workflow, including exploratory data analysis, feature engineering, preprocessing, model development, optimization, evaluation, and error analysis.
-
----
+The project was done within the framework of Introduction to Machine Learning course and shows the full process of building a model from the very beginning of its creation till error analysis.
 
 ## Research Question
 
-Can machine learning and deep learning models accurately predict student academic outcomes using demographic, socioeconomic, and academic information?
-
----
+Can the academic outcomes of the students be predicted with machine learning and deep learning models using demographic, socioeconomic and other information about students?
 
 ## Objectives
 
-The project aims to:
+The objectives of the project include:
 
-* Explore factors associated with student success and dropout.
-* Compare classical machine learning models with deep learning models.
-* Evaluate model performance using multiple metrics.
-* Investigate the impact of feature engineering and hyperparameter tuning.
-* Identify the most influential predictors of academic outcomes.
-* Provide insights into the strengths and limitations of different modeling approaches.
+* To explore factors that influence students' success and their dropout.
+* To compare classical machine learning models and deep learning models.
+* To evaluate model performance through the use of several metrics.
+* To investigate the influence of feature engineering and hyperparameter tuning.
+* To identify most influential factors on students' academic success and dropout.
+  
+## Data Set
 
----
+### Predict Students' Dropout and Academic Success
 
-## Dataset
+The data set was taken from UCI Machine Learning Repository and consists of information about students of higher educational institutions.
 
-### Predict Students' Dropout and Academic Success Dataset
+### Data Set Characteristic
 
-The dataset was obtained from the UCI Machine Learning Repository and contains information about students enrolled in higher education institutions.
-
-### Dataset Characteristics
-
-* Total Records: 4,424 students
-* Features: 36 input variables
-* Target Classes:
+* Total number of records: 4,424 students
+* Number of input features: 36 variables
+* Classes of target variable:
 
   * Graduate
   * Enrolled
   * Dropout
 
-### Variables Included
+### Features
 
-The dataset contains information related to:
+The data set includes information about the following aspects of students' lives:
 
 * Demographic characteristics
-* Socioeconomic background
-* Enrollment information
-* Academic performance
-* Previous educational history
-* Financial status
+* Socioeconomic situation
+* Information about enrolment
+* Academic results
+* Prior educational experience
+* Financial state
 
-The target variable represents the final academic outcome of each student.
+Target variable reflects students' academic outcome.
 
----
+## Workflow for the Project
 
-## Project Workflow
-
-The project follows a complete machine learning pipeline:
+The whole process of working on the project is based on the complete machine learning pipeline:
 
 ### 1. Data Loading and Exploration
 
-* Dataset import
-* Initial inspection
-* Data quality verification
-* Statistical summaries
+* Dataset loading
+* Initial exploration
+* Quality checking
+* Statistical characteristics calculation
 
 ### 2. Exploratory Data Analysis
 
-* Class distribution analysis
-* Feature distributions
-* Correlation analysis
-* Outlier identification
-* Missing value investigation
+* Class balance analysis
+* Distributions of features
+* Correlations analysis
+* Detection of outliers
+* Missing values analysis
 
 ### 3. Data Preprocessing
 
-* Label encoding
-* Feature scaling
-* Data cleaning
-* Train-test splitting
+* Labeling
+* Scaling of features
+* Cleaning of data
+* Splitting into train and test sets
 
 ### 4. Feature Engineering
 
-Several engineered features were created and evaluated to improve predictive performance.
+A number of new engineered features was produced.
 
 ### 5. Machine Learning Models
 
-The following traditional machine learning models were implemented:
+The following traditional machine learning models were applied:
 
 #### Logistic Regression
 
-Used as a baseline linear classification model.
+Used as a baseline linear classifier.
 
 #### Random Forest
 
-An ensemble learning approach capable of capturing nonlinear relationships.
+A machine learning algorithm which can detect nonlinear relationships.
 
 #### Support Vector Machine (SVM)
 
-Implemented with different kernel and regularization configurations.
+Utilized in various forms of kernel and regularization parameters.
 
 ### 6. Deep Learning Models
 
 #### Sequential Neural Network
 
-A fully connected neural network built using TensorFlow and Keras Sequential API.
+A fully connected neural network implemented through TensorFlow and Keras Sequential API.
 
 #### Functional API Neural Network
 
-A more flexible architecture developed using TensorFlow Functional API.
+A neural network architecture created through TensorFlow Functional API.
 
-Additional techniques explored include:
+Some other approaches considered are:
 
-* Dropout Regularization
+* Dropout
 * Batch Normalization
 * Learning Rate Optimization
-* Architecture Tuning
+* Model Architecture Selection
 
----
+## Experiment Setup
 
-## Experimental Design
+Over ten experiments were performed for the purpose of evaluating model performance on various configurations.
 
-More than ten experiments were conducted to compare model performance under different configurations.
-
-Examples include:
+Some experiments include:
 
 | Experiment | Model                        | Purpose                        |
 | ---------- | ---------------------------- | ------------------------------ |
@@ -146,11 +135,10 @@ Examples include:
 | 11         | Functional API Model         | Architecture comparison        |
 | 12         | Tuned Functional API Model   | Final deep learning experiment |
 
----
 
-## Evaluation Metrics
+## Evaluation Measures
 
-Model performance was evaluated using:
+The evaluation of the model was done via:
 
 * Accuracy
 * Precision
@@ -159,17 +147,15 @@ Model performance was evaluated using:
 * ROC-AUC
 * Confusion Matrix Analysis
 
-These metrics provide a comprehensive assessment of predictive performance across all classes.
-
----
+All of which give a thorough evaluation of the predictive performance of the model in all classes.
 
 ## Visualizations
 
-The project includes extensive visual analysis, including:
+This project comes with an elaborate visualization section, which involves:
 
-* Class Distribution Charts
-* Correlation Heatmaps
-* Feature Importance Plots
+* Class Distribution Visualizations
+* Correlation Heat Maps
+* Feature Importance Visualization
 * Confusion Matrices
 * ROC Curves
 * Precision-Recall Curves
@@ -177,10 +163,7 @@ The project includes extensive visual analysis, including:
 * Validation Curves
 * Error Analysis Visualizations
 
----
-
-## Repository Structure
-
+## Project Structure
 ```text
 student-success-ml-dl-project/
 │
@@ -208,8 +191,6 @@ student-success-ml-dl-project/
 ├── requirements.txt
 └── .gitignore
 ```
-
----
 
 ## Technologies Used
 
@@ -243,63 +224,57 @@ student-success-ml-dl-project/
 * Git
 * GitHub
 
----
-
 ## Key Findings
 
-The project compares the effectiveness of traditional machine learning algorithms and deep learning architectures for predicting student academic outcomes.
+The research focuses on comparing traditional machine learning approaches to the deep learning techniques and evaluating their efficiency for forecasting student performance.
 
-The results demonstrate how model complexity, feature engineering, and optimization strategies influence predictive performance. The study also highlights the trade-offs between interpretability, computational efficiency, and predictive accuracy.
-
----
+The study illustrates the impact of various aspects of the modeling process on the prediction quality. It allows us to understand the trade-offs between different factors such as model simplicity/complexity, interpretability, and computational requirements.
 
 ## Limitations
 
-Several limitations should be considered:
+There are several limitations that need to be considered:
 
-* Dataset collected from a specific educational context.
-* Potential class im# Predicting Student Dropout and Academic Success Using Machine Learning and Deep Learning
+* The dataset is collected in a particular educational setting.
+* Class imbalance i# Predicting Student Dropout and Academic Performance With Machine Learning and Deep Learning
 
-## Project Overview
+## Project Description
 
-Student success remains one of the most important challenges facing educational institutions worldwide. Universities and colleges invest significant resources into supporting students, yet many learners still struggle academically, become disengaged, or eventually drop out. Early identification of at-risk students can help institutions provide timely interventions, improve retention rates, and support better academic outcomes.
+The problem of student success is the biggest challenge for all educational establishments nowadays. There are significant efforts made by universities and colleges in order to assist students; nevertheless, there are still many students who have difficulties and end up failing or even leaving college. Early identification of at-risk students is crucial for helping institutions intervene.
 
-This project investigates whether student academic outcomes can be predicted using machine learning and deep learning techniques. The study compares multiple traditional machine learning algorithms with neural network architectures to determine which approaches perform best when predicting whether a student will graduate, remain enrolled, or drop out.
+This research evaluates the ability of machine learning and deep learning algorithms to predict the academic results of students. This study compares several traditional machine learning algorithms against neural networks in order to identify which models perform better when it comes to predicting the academic fate of the student (whether he or she will graduate, continue the studies or drop out).
 
-The project was completed as part of the Introduction to Machine Learning module and demonstrates the complete machine learning workflow, including exploratory data analysis, feature engineering, preprocessing, model development, optimization, evaluation, and error analysis.
+The project is done within the framework of the Introduction to Machine Learning course and illustrates the entire process of machine learning, including data exploration, feature engineering, preprocessing, modeling, optimization, evaluation, and error analysis.
 
 ---
 
 ## Research Question
 
-Can machine learning and deep learning models accurately predict student academic outcomes using demographic, socioeconomic, and academic information?
+Is it possible to use machine learning and deep learning methods for the prediction of the academic performance of students based on demographic, socioeconomic, and academic data?
 
 ---
 
 ## Objectives
 
-The project aims to:
+The goals of the project include:
 
-* Explore factors associated with student success and dropout.
-* Compare classical machine learning models with deep learning models.
-* Evaluate model performance using multiple metrics.
-* Investigate the impact of feature engineering and hyperparameter tuning.
-* Identify the most influential predictors of academic outcomes.
-* Provide insights into the strengths and limitations of different modeling approaches.
-
----
+* Analysis of the factors affecting the success and dropout of students.
+* Comparison of classic machine learning algorithms against deep learning algorithms.
+* Model evaluation with the help of various metrics.
+* Investigation of the effect of feature engineering and hyperparameter tuning.
+* Identification of key factors influencing the academic performance.
+* Obtaining useful insights into different approaches to modeling.
 
 ## Dataset
 
 ### Predict Students' Dropout and Academic Success Dataset
 
-The dataset was obtained from the UCI Machine Learning Repository and contains information about students enrolled in higher education institutions.
+The dataset was downloaded from the UCI Machine Learning Repository and provides information about students of higher education institutions.
 
 ### Dataset Characteristics
 
-* Total Records: 4,424 students
-* Features: 36 input variables
-* Target Classes:
+* Total Number of Records: 4,424 students
+* Features: 36 input features
+* Target Categories:
 
   * Graduate
     * Enrolled
@@ -318,78 +293,74 @@ The dataset was obtained from the UCI Machine Learning Repository and contains i
 
       The target variable represents the final academic outcome of each student.
 
-      ---
+     ## Project Workflow
 
-      ## Project Workflow
+The project involves a complete machine learning pipeline process.
 
-      The project follows a complete machine learning pipeline:
+### 1. Data Loading and Exploration
 
-      ### 1. Data Loading and Exploration
+* Data loading
+* Basic exploration
+* Data validation
+* Statistical summaries
 
-      * Dataset import
-      * Initial inspection
-      * Data quality verification
-      * Statistical summaries
+### 2. Exploratory Data Analysis
 
-      ### 2. Exploratory Data Analysis
+* Class distribution analysis
+* Feature distribution analysis
+* Correlation analysis
+* Outliers detection
+* Missing values analysis
 
-      * Class distribution analysis
-      * Feature distributions
-      * Correlation analysis
-      * Outlier identification
-      * Missing value investigation
+### 3. Data Preprocessing
 
-      ### 3. Data Preprocessing
+* Label encoding
+* Feature scaling
+* Data cleaning
+* Train-test split
 
-      * Label encoding
-      * Feature scaling
-      * Data cleaning
-      * Train-test splitting
+### 4. Feature Engineering
 
-      ### 4. Feature Engineering
+Several feature engineering processes were carried out in order to improve performance of the model.
 
-      Several engineered features were created and evaluated to improve predictive performance.
+### 5. Machine Learning Models
 
-      ### 5. Machine Learning Models
+The following classical machine learning models were developed in the project:
 
-      The following traditional machine learning models were implemented:
+#### Logistic Regression
 
-      #### Logistic Regression
+Baseline linear classifier.
 
-      Used as a baseline linear classification model.
+#### Random Forest
 
-      #### Random Forest
+Ensemble learning algorithm capable of modelling nonlinear relationship.
 
-      An ensemble learning approach capable of capturing nonlinear relationships.
+#### Support Vector Machine (SVM)
 
-      #### Support Vector Machine (SVM)
+Implemented with various configurations of kernel and regularization parameters.
 
-      Implemented with different kernel and regularization configurations.
+### 6. Deep Learning Models
 
-      ### 6. Deep Learning Models
+#### Sequential Neural Network
 
-      #### Sequential Neural Network
+Fully connected neural network implemented using TensorFlow and Keras Sequential API.
 
-      A fully connected neural network built using TensorFlow and Keras Sequential API.
+#### Functional API Neural Network
 
-      #### Functional API Neural Network
+Neural network implemented using TensorFlow Functional API.
 
-      A more flexible architecture developed using TensorFlow Functional API.
+Other algorithms considered in the project:
 
-      Additional techniques explored include:
+* Dropout Regularization
+* Batch Normalization
+* Learning rate optimization
+* Architecture tuning
 
-      * Dropout Regularization
-      * Batch Normalization
-      * Learning Rate Optimization
-      * Architecture Tuning
+## Experimental Design
 
-      ---
+More than ten experiments were run to compare performance of models with different configurations.
 
-      ## Experimental Design
-
-      More than ten experiments were conducted to compare model performance under different configurations.
-
-      Examples include:
+For example:
 
       | Experiment | Model                        | Purpose                        |
       | ---------- | ---------------------------- | ------------------------------ |
@@ -541,11 +512,7 @@ The dataset was obtained from the UCI Machine Learning Repository and contains i
       This repository is intended for academic and educational purposes.
       Machine Learning Final Project
 
-African Leadership University
 
----
 
-## License
-
-This repository is intended for academic and educational purposes.
-
+## Author
+Hikma Hamza
