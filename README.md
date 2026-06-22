@@ -513,8 +513,6 @@ For example:
       Machine Learning Final Project
 
 
+
 ## Author
 Hikma Hamza
-
-This repository is intended for academic and educational purposes.
-
