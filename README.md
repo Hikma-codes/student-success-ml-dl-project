@@ -168,24 +168,18 @@ This project comes with an elaborate visualization section, which involves:
 student-success-ml-dl-project/
 │
 ├── data/
-│   └── student_dropout.csv
+│   └── dataset.csv
 │
 ├── notebooks/
 │   └── student_success_final.ipynb
 │
 ├── figures/
-│   ├── class_distribution.png
-│   ├── correlation_heatmap.png
-│   ├── feature_importance.png
-│   ├── roc_curve.png
-│   ├── confusion_matrix.png
-│   └── learning_curve.png
 │
 ├── models/
-│   └── saved_model.keras
+│   
 │
 ├── report/
-│   └── final_report.pdf
+│   └── Predicting Student Dropout Risk Using Traditional Machine Learning and Deep Learning Approaches
 │
 ├── README.md
 ├── requirements.txt
@@ -356,28 +350,6 @@ Other algorithms considered in the project:
 * Learning rate optimization
 * Architecture tuning
 
-## Experimental Design
-
-More than ten experiments were run to compare performance of models with different configurations.
-
-For example:
-
-      | Experiment | Model                        | Purpose                        |
-      | ---------- | ---------------------------- | ------------------------------ |
-      | 1          | Logistic Regression Baseline | Baseline performance           |
-      | 2          | Logistic Regression Tuned    | Hyperparameter optimization    |
-      | 3          | Random Forest 100 Trees      | Ensemble benchmark             |
-      | 4          | Random Forest 300 Trees      | Complexity analysis            |
-      | 5          | Tuned Random Forest          | Performance optimization       |
-      | 6          | SVM Baseline                 | Nonlinear classification       |
-      | 7          | Tuned SVM                    | Hyperparameter analysis        |
-      | 8          | Sequential Neural Network    | Deep learning baseline         |
-      | 9          | Sequential + Dropout         | Regularization analysis        |
-      | 10         | Sequential + BatchNorm       | Stability improvement          |
-      | 11         | Functional API Model         | Architecture comparison        |
-      | 12         | Tuned Functional API Model   | Final deep learning experiment |
-
-      ---
 
       ## Evaluation Metrics
 
@@ -392,7 +364,7 @@ For example:
 
       These metrics provide a comprehensive assessment of predictive performance across all classes.
 
-      ---
+     
 
       ## Visualizations
 
@@ -408,39 +380,7 @@ For example:
       * Validation Curves
       * Error Analysis Visualizations
 
-      ---
-
-      ## Repository Structure
-
-      ```text
-      student-success-ml-dl-project/
-      │
-      ├── data/
-      │   └── student_dropout.csv
-      │
-      ├── notebooks/
-      │   └── student_success_final.ipynb
-      │
-      ├── figures/
-      │   ├── class_distribution.png
-      │   ├── correlation_heatmap.png
-      │   ├── feature_importance.png
-      │   ├── roc_curve.png
-      │   ├── confusion_matrix.png
-      │   └── learning_curve.png
-      │
-      ├── models/
-      │   └── saved_model.keras
-      │
-      ├── report/
-      │   └── final_report.pdf
-      │
-      ├── README.md
-      ├── requirements.txt
-      └── .gitignore
-      ```
-
-      ---
+  
 
       ## Technologies Used
 
@@ -501,16 +441,6 @@ For example:
 
       **Hikma Hamza**
 
-      Machine Learning Final Project
-
-      African Leadership University
-
-      ---
-
-      ## License
-
-      This repository is intended for academic and educational purposes.
-      Machine Learning Final Project
 
 
 
